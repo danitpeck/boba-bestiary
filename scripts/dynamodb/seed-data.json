@@ -1,0 +1,55 @@
+{
+  "BobaBestiary": [
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SHOP#feng-cha" },
+          "SK": { "S": "PROFILE" },
+          "EntityType": { "S": "SHOP" },
+          "shopId": { "S": "feng-cha" },
+          "name": { "S": "Feng Cha" },
+          "location": { "S": "Dallas" },
+          "vibe": { "S": "cozy tea cave" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SHOP#feng-cha" },
+          "SK": { "S": "DRINK#strawberry-milk-tea" },
+          "EntityType": { "S": "DRINK_SUMMARY" },
+          "shopId": { "S": "feng-cha" },
+          "drinkId": { "S": "strawberry-milk-tea" },
+          "name": { "S": "Strawberry Milk Tea" },
+          "species": { "S": "Powdered Creamling" },
+          "baseFlavor": { "S": "strawberry" },
+          "summonAgain": { "BOOL": true },
+          "rating": { "N": "4" },
+          "calorieEstimate": { "N": "280" },
+          "GSI1PK": { "S": "SUMMON#YES" },
+          "GSI1SK": { "S": "RATING#04#CAL#0280#SHOP#feng-cha#DRINK#strawberry-milk-tea" }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "PK": { "S": "SHOP#feng-cha" },
+          "SK": { "S": "DRINK#matcha-almond-milk-tea" },
+          "EntityType": { "S": "DRINK_SUMMARY" },
+          "shopId": { "S": "feng-cha" },
+          "drinkId": { "S": "matcha-almond-milk-tea" },
+          "name": { "S": "Matcha Almond Milk Tea" },
+          "species": { "S": "Verdant Tapioca Wyrm" },
+          "baseFlavor": { "S": "matcha" },
+          "summonAgain": { "BOOL": true },
+          "rating": { "N": "5" },
+          "calorieEstimate": { "N": "420" },
+          "GSI1PK": { "S": "SUMMON#YES" },
+          "GSI1SK": { "S": "RATING#05#CAL#0420#SHOP#feng-cha#DRINK#matcha-almond-milk-tea" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+services:
+  dynamodb-local:
+    image: amazon/dynamodb-local:latest
+    container_name: boba-bestiary-dynamodb
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./dynamodb-data:/home/dynamodblocal/data"
+    working_dir: /home/dynamodblocal

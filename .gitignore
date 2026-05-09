@@ -1,0 +1,7 @@
+dynamodb-data/
+cdk.out/
+node_modules/
+dist/
+build/
+target/
+.env
